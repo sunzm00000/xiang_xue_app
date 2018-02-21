@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemview"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/DIMEN_70dp"
+    android:background="#ffffff">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/DIMEN_20dp">
+
+       <TextView
+           android:id="@+id/txt_title"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="海上鲜4月1日最新发布的海鲜批发价格详情"
+           android:textSize="15sp"
+           android:textColor="#333333"/>
+       <TextView
+           android:id="@+id/txt_time"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="4小时前"
+           android:textSize="14sp"
+           android:layout_marginTop="@dimen/DIMEN_5dp"
+           android:textColor="#aebace"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_1dp"
+        android:background="#eef1f6"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/DIMEN_20dp"/>
+
+</RelativeLayout>

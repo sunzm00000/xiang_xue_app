@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+
+        >
+
+        <ImageView
+            android:id="@+id/emotion_button"
+            android:layout_width="@dimen/DIMEN_26dp"
+            android:layout_height="@dimen/DIMEN_26dp"
+            android:src="@mipmap/noun_expression_icon"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/DIMEN_15dp"/>
+        <ImageView
+            android:id="@+id/img_picture"
+            android:layout_width="@dimen/DIMEN_26dp"
+            android:layout_height="@dimen/DIMEN_26dp"
+            android:src="@mipmap/picture_icon"
+            android:layout_toLeftOf="@+id/emotion_button"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/DIMEN_15dp"/>
+
+        <EditText
+            android:id="@+id/bar_edit_text"
+            android:layout_width="match_parent"
+            android:paddingLeft="@dimen/DIMEN_10dp"
+            android:layout_height="@dimen/DIMEN_35dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/img_picture"
+            android:layout_marginLeft="@dimen/DIMEN_15dp"
+            android:layout_marginRight="@dimen/DIMEN_15dp"
+            android:background="@drawable/bg_forget_pass_edit"
+            android:singleLine="true"
+            android:imeOptions="actionSend"
+            android:paddingRight="@dimen/DIMEN_10dp"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

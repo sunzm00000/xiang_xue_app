@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7faff"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true">
+
+    <include
+        layout="@layout/layout_titlebar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/DIMEN_15dp"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_1dp"
+                android:background="#eef1f6"
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#ffffff">
+
+            <RelativeLayout
+                android:id="@+id/layout_ground_title"
+                android:background="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_50dp"
+                android:paddingRight="@dimen/DIMEN_20dp"
+                android:paddingLeft="@dimen/DIMEN_20dp">
+
+                <ImageView
+                    android:id="@+id/img_right_nickname"
+                    android:layout_width="@dimen/DIMEN_8dp"
+                    android:layout_height="@dimen/DIMEN_14dp"
+                    android:src="@mipmap/arrow_icon"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:layout_marginRight="@dimen/DIMEN_10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/img_right_nickname"
+                    android:textColor="#132234"
+                    android:text="钓鱼俱乐部"
+                    android:id="@+id/txt_groud_title" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="#aebace"
+                    android:text="群名称"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/textView4" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_1dp"
+                android:layout_marginLeft="@dimen/DIMEN_20dp"
+                android:background="#eef1f6"
+                />
+            <RelativeLayout
+                android:id="@+id/chatnember"
+                android:background="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_50dp"
+                android:paddingRight="@dimen/DIMEN_20dp"
+                android:paddingLeft="@dimen/DIMEN_20dp">
+                <ImageView
+                    android:id="@+id/img_right_members"
+                    android:layout_width="@dimen/DIMEN_8dp"
+                    android:layout_height="@dimen/DIMEN_14dp"
+                    android:src="@mipmap/arrow_icon"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:layout_marginRight="@dimen/DIMEN_10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/img_right_members"
+                    android:textColor="#132234"
+                    android:text="钓鱼俱乐部"
+                    android:id="@+id/txt_groud_member" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="#aebace"
+                    android:text="群成员"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                     />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_1dp"
+                android:layout_marginLeft="@dimen/DIMEN_20dp"
+                android:background="#eef1f6"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/mRecyclerView"
+                    android:layout_marginLeft="@dimen/DIMEN_20dp"
+                    android:layout_marginRight="@dimen/DIMEN_20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_1dp"
+                android:background="#eef1f6"
+                />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_1dp"
+                android:background="#eef1f6"
+                android:layout_marginTop="@dimen/DIMEN_15dp"
+                />
+            <RelativeLayout
+                android:id="@+id/layout_autograph"
+                android:background="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_50dp"
+                android:paddingRight="@dimen/DIMEN_20dp"
+                android:paddingLeft="@dimen/DIMEN_20dp">
+
+                <ImageView
+
+                    android:layout_width="@dimen/DIMEN_8dp"
+                    android:layout_height="@dimen/DIMEN_14dp"
+                    android:src="@mipmap/arrow_icon"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="#aebace"
+                    android:text="群介绍"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/txt_groud_intro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#132234"
+                android:text="我们是一群爱钓鱼的小伙伴，欢迎大家的加入！"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/DIMEN_20dp"
+                android:paddingRight="@dimen/DIMEN_20dp"
+                android:paddingBottom="@dimen/DIMEN_15dp"
+
+                android:background="#ffffff"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_1dp"
+                android:background="#eef1f6"
+
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_46dp"
+                android:background="@drawable/bg_button"
+                android:text="退出群聊"
+                android:textColor="#ffffff"
+                android:layout_margin="@dimen/DIMEN_30dp"
+                android:textSize="16sp"
+                android:id="@+id/btn_login" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

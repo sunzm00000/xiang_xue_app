@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/DIMEN_70dp"
+    android:background="#ffffff">
+
+    <ImageView
+        android:layout_width="@dimen/DIMEN_8dp"
+        android:layout_height="@dimen/DIMEN_14dp"
+        android:src="@mipmap/arrow_icon"
+        android:layout_marginRight="@dimen/DIMEN_20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_1dp"
+        android:background="#eef1f6"
+        android:layout_marginLeft="@dimen/DIMEN_60dp"
+        android:layout_alignParentBottom="true"/>
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/img_neardy_port"
+            android:layout_width="@dimen/DIMEN_24dp"
+            android:layout_height="@dimen/DIMEN_30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/DIMEN_20dp"
+            android:src="@mipmap/neardy_port_icon"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/DIMEN_50dp"
+
+            android:layout_marginLeft="@dimen/DIMEN_15dp">
+        <TextView
+            android:id="@+id/portname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:textSize="15sp"
+            android:text="天津塘沽"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textColor="#aebace"
+            android:textSize="14sp"
+            android:layout_gravity="bottom"
+            android:text="中国 [159km]"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

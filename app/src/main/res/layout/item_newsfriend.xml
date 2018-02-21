@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/DIMEN_90dp"
+    android:background="#ffffff">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/DIMEN_50dp"
+       android:layout_centerVertical="true"
+       android:layout_marginLeft="@dimen/DIMEN_20dp">
+   <ImageView
+       android:id="@+id/img_avatar"
+       android:layout_width="@dimen/DIMEN_50dp"
+       android:layout_height="@dimen/DIMEN_50dp"
+       android:src="@mipmap/user_avatar_icon"
+       android:scaleType="fitXY"
+
+       />
+   <TextView
+       android:id="@+id/txt_name"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="虞姬"
+       android:textColor="#45484d"
+       android:textSize="17sp"
+       android:layout_marginTop="@dimen/DIMEN_3dp"
+       android:layout_toRightOf="@+id/img_avatar"
+       android:layout_marginLeft="@dimen/DIMEN_15dp"
+       />
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="请求添加你为渔友"
+       android:textColor="#b3b3b3"
+       android:textSize="14sp"
+       android:layout_marginBottom="@dimen/DIMEN_3dp"
+       android:layout_toRightOf="@+id/img_avatar"
+       android:layout_marginLeft="@dimen/DIMEN_15dp"
+       android:layout_alignParentBottom="true"
+       />
+       <RelativeLayout
+           android:id="@+id/layout_friend"
+           android:layout_width="@dimen/DIMEN_48dp"
+           android:layout_height="@dimen/DIMEN_28dp"
+           android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+           android:layout_marginRight="@dimen/DIMEN_20dp"
+           android:background="@drawable/bg_friend_right">
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerInParent="true"
+               android:src="@mipmap/news_friend_icon"/>
+
+       </RelativeLayout>
+       <TextView
+           android:id="@+id/txt_friends"
+           android:layout_alignParentRight="true"
+           android:layout_marginRight="@dimen/DIMEN_20dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="已添加"
+           android:textColor="#aebace"
+           android:textSize="14sp"
+           android:layout_centerVertical="true"
+          />
+
+   </RelativeLayout>
+</RelativeLayout>

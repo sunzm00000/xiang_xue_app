@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#f7faff">
+        <ImageView
+            android:layout_width="@dimen/DIMEN_81dp"
+            android:layout_height="@dimen/DIMEN_148dp"
+            android:src="@mipmap/noresult"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/DIMEN_90dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#aebace"
+            android:lineSpacingExtra="2sp"
+            android:gravity="center_horizontal"
+            android:text="找不到相关结果！"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/DIMEN_64dp"
+            />
+    </LinearLayout>
+</LinearLayout>

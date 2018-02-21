@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/DIMEN_70dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/DIMEN_20dp">
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#4a4a4a"
+            android:text="每日登录"/>
+        <TextView
+            android:id="@+id/txt_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#aebace"
+            android:layout_marginTop="@dimen/DIMEN_5dp"
+            android:text="2017-09-10 12:30:00"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/DIMEN_20dp"
+        android:textColor="#fbbc48"
+        android:text="+5"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_1dp"
+        android:background="#eef1f6"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/DIMEN_20dp"/>
+
+</RelativeLayout>

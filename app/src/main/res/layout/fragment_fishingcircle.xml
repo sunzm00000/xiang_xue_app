@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="52.0dip"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_50dp"
+        android:background="@drawable/bg_gradient_color"
+       >
+
+
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="渔友圈"
+            android:textSize="17sp"
+            android:textColor="#ffffff"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/txt_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="标题"
+            android:textSize="15sp"
+            android:textColor="#ffffff"
+            android:visibility="gone"
+            android:layout_marginRight="@dimen/DIMEN_20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:id="@+id/img_right"
+            android:layout_width="@dimen/DIMEN_29dp"
+            android:layout_height="@dimen/DIMEN_18dp"
+            android:src="@mipmap/fishing_circle_icon"
+            android:layout_marginRight="@dimen/DIMEN_15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_50dp"
+        android:background="#ffffff"
+        app:tabIndicatorColor="#22a7f0"
+        app:tabIndicatorHeight="@dimen/DIMEN_4dp"
+        app:tabSelectedTextColor="#22a7f0"
+        app:tabMinWidth="@dimen/DIMEN_50dp"
+        app:tabTextColor="#45484d"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_1dp"
+        android:background="#eef1f6"/>
+
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="#f7faff"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/DIMEN_40dp"
+                android:src="@mipmap/fishingcircle_none_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="60dp"
+                android:textColor="#aebace"
+                android:text="暂时没有新动态！"
+
+                />
+            <TextView
+                android:id="@+id/send_port"
+                android:layout_width="126dp"
+                android:layout_height="@dimen/DIMEN_31dp"
+                android:textSize="14sp"
+                android:textColor="#73809e"
+                android:letterSpacing="0.08"
+                android:gravity="center"
+                android:padding="3dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/DIMEN_30dp"
+                android:background="@drawable/bg_nonet"
+                android:text="发布一条动态"
+                />
+
+        </LinearLayout>
+
+
+
+</LinearLayout>

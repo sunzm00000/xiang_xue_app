@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#f7faff"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:layout_height="match_parent">
+    <include
+        layout="@layout/layout_titlebar"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_1dp"
+        android:background="#eef1f6"
+        android:layout_marginTop="@dimen/DIMEN_15dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/layout_avatar"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_55dp"
+        android:paddingRight="@dimen/DIMEN_20dp"
+        android:paddingLeft="@dimen/DIMEN_20dp">
+
+        <ImageView
+
+            android:layout_width="@dimen/DIMEN_8dp"
+            android:layout_height="@dimen/DIMEN_14dp"
+            android:src="@mipmap/arrow_icon"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:id="@+id/img_arrow"
+            android:layout_width="@dimen/DIMEN_39dp"
+            android:layout_height="@dimen/DIMEN_39dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/user_avatar_icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#aebace"
+            android:text="头像"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/img_setting"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/DIMEN_20dp"
+        android:layout_height="@dimen/DIMEN_1dp"
+        android:background="#eef1f6"
+        />
+    <RelativeLayout
+
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_55dp"
+        android:paddingRight="@dimen/DIMEN_20dp"
+        android:paddingLeft="@dimen/DIMEN_20dp">
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#aebace"
+            android:text="昵称"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/t1" />
+
+        <EditText
+            android:id="@+id/txt_nickname"
+            android:layout_toRightOf="@+id/t1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/DIMEN_20dp"
+            android:hint="请输入昵称"
+            android:textColor="#333333"
+            android:background="@null"
+            android:textSize="15sp"
+            android:textColorHint="#aebace"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_1dp"
+        android:background="#eef1f6"
+        android:layout_marginLeft="@dimen/DIMEN_20dp"
+        />
+
+    <RelativeLayout
+
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_55dp"
+        android:paddingRight="@dimen/DIMEN_20dp"
+        android:paddingLeft="@dimen/DIMEN_20dp">
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#aebace"
+            android:text="地区"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/t2" />
+
+        <TextView
+            android:id="@+id/txt_city"
+            android:layout_toRightOf="@+id/t2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/DIMEN_20dp"
+            android:hint="请选择所在区域"
+            android:textColor="#333333"
+            android:background="@null"
+            android:gravity="left|center"
+            android:textSize="15sp"
+            android:textColorHint="#aebace"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_1dp"
+        android:background="#eef1f6"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_46dp"
+        android:layout_marginTop="@dimen/DIMEN_15dp"
+        android:layout_marginRight="@dimen/DIMEN_40dp"
+        android:layout_marginLeft="@dimen/DIMEN_40dp"
+        android:text="完成"
+        android:background="@drawable/bg_button"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:id="@+id/btn_login"
+        />
+<!--    <com.dd.CircularProgressButton
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_46dp"
+        android:layout_marginTop="@dimen/DIMEN_15dp"
+        android:layout_marginRight="@dimen/DIMEN_40dp"
+        android:layout_marginLeft="@dimen/DIMEN_40dp"
+        android:text="完成"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:id="@+id/btn_login"
+        app:cpb_cornerRadius="48dp"
+        app:cpb_textComplete="完成"
+        app:cpb_textError="错误"
+        app:cpb_textIdle="完成"
+        app:cpb_selectorIdle="@drawable/idle_state_selector"
+        app:cpb_selectorComplete="@drawable/complete_state_selector"
+        app:cpb_selectorError="@drawable/error_state_selector"
+        />-->
+
+</LinearLayout>

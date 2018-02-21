@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/btn_itemview"
+    android:layout_height="@dimen/DIMEN_90dp">
+
+
+    <TextView
+        android:id="@+id/txt_message_name"
+        android:layout_alignTop="@+id/img_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/img_avatar"
+        android:layout_marginLeft="@dimen/DIMEN_14dp"
+        android:text=""
+        android:textSize="17sp"
+        android:layout_marginTop="@dimen/DIMEN_3dp"
+        android:textColor="#45484d"/>
+
+    <com.example.fishingport.app.view.circularavatar.CircularImageView
+        android:id="@+id/img_avatar"
+        android:layout_width="@dimen/DIMEN_55dp"
+        android:layout_height="@dimen/DIMEN_55dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/DIMEN_20dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_1dp"
+        android:background="#eef1f6"
+        android:layout_alignParentBottom="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="14sp"
+        android:textColor="#73809e"
+        android:layout_toLeftOf="@+id/txt_time"
+        android:layout_alignBottom="@+id/img_avatar"
+        android:layout_alignLeft="@+id/txt_message_name"
+        android:layout_alignStart="@+id/txt_message_name"
+        android:id="@+id/text_info"
+        android:lines="1"
+        android:ellipsize="end"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10:44"
+        android:textSize="12sp"
+        android:textColor="#aebace"
+        android:layout_marginRight="20dp"
+        android:layout_alignTop="@+id/txt_message_name"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/txt_time" />
+    <com.example.fishingport.app.view.dragindicator.DragIndicatorView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#e84a5f"
+        android:padding="@dimen/DIMEN_6dp"
+        android:text=""
+        android:visibility="gone"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        android:layout_alignBottom="@+id/img_avatar"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/txt_indicatorview"
+        />
+
+
+</RelativeLayout>

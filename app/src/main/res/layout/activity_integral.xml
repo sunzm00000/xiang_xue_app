@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    >
+
+    <include
+        layout="@layout/layout_titlebar"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_150dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_gradient_color">
+
+        <TextView
+            android:id="@+id/txt_user_integral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100"
+            android:textColor="#ffffff"
+            android:textSize="48sp"
+            android:layout_marginTop="@dimen/DIMEN_20dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <RelativeLayout
+            android:id="@+id/layout_exchange"
+            android:layout_width="@dimen/DIMEN_143dp"
+            android:layout_height="@dimen/DIMEN_32dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/DIMEN_15dp"
+            android:background="@drawable/bg_integral_market">
+
+            <ImageView
+                android:id="@+id/img_market"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/DIMEN_15dp"
+                android:src="@mipmap/market_icon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="积分兑换好礼"
+                android:textColor="#ffffff"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/DIMEN_15dp"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_50dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/layout_integral_details"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:layout_width="@dimen/DIMEN_13dp"
+                    android:layout_height="@dimen/DIMEN_14dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/money_inter_icon"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="积分明细"
+                    android:textColor="#4a4a4a"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="@dimen/DIMEN_8dp"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+        <View
+            android:layout_width="@dimen/DIMEN_1dp"
+            android:layout_height="match_parent"
+            android:background="#eef1f6"/>
+        <RelativeLayout
+            android:id="@+id/forrecord"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:layout_width="@dimen/DIMEN_15dp"
+                    android:layout_height="@dimen/DIMEN_14dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/exchange_inter_icon"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="兑换记录"
+                    android:textColor="#4a4a4a"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="@dimen/DIMEN_8dp"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_1dp"
+        android:background="#eef1f6"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_11dp"
+        android:background="#eef1f6"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_1dp"
+        android:background="#eef1f6"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

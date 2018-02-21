@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_titlebar" />
+
+    <RelativeLayout
+        android:id="@+id/comments"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_70dp"
+        android:layout_marginLeft="@dimen/DIMEN_20dp"
+        android:layout_marginRight="@dimen/DIMEN_20dp">
+
+        <ImageView
+            android:id="@+id/dd"
+            android:layout_width="@dimen/DIMEN_8dp"
+            android:layout_height="@dimen/DIMEN_14dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/arrow_icon" />
+        <com.example.fishingport.app.view.dragindicator.DragIndicatorView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#e84a5f"
+            android:padding="@dimen/DIMEN_6dp"
+            android:text="0"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:layout_toLeftOf="@+id/dd"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/DIMEN_10dp"
+            android:id="@+id/onedian"
+            />
+        <ImageView
+            android:id="@+id/img_setting"
+            android:layout_width="@dimen/DIMEN_50dp"
+            android:layout_height="@dimen/DIMEN_50dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/comment_icon" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/DIMEN_15dp"
+            android:layout_toRightOf="@+id/img_setting"
+            android:text="评论"
+            android:textColor="#4a4a4a"
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_1dp"
+        android:layout_marginLeft="@dimen/DIMEN_20dp"
+        android:background="#eef1f6" />
+
+    <RelativeLayout
+        android:id="@+id/layout_thumb"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_70dp"
+        android:layout_marginLeft="@dimen/DIMEN_20dp"
+        android:layout_marginRight="@dimen/DIMEN_20dp">
+
+        <ImageView
+            android:id="@+id/ddd"
+            android:layout_width="@dimen/DIMEN_8dp"
+            android:layout_height="@dimen/DIMEN_14dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/arrow_icon" />
+        <com.example.fishingport.app.view.dragindicator.DragIndicatorView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#e84a5f"
+            android:padding="@dimen/DIMEN_6dp"
+            android:text="0"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/DIMEN_10dp"
+            android:id="@+id/twodian"
+            android:layout_toLeftOf="@+id/ddd"
+            />
+        <ImageView
+            android:id="@+id/img_give"
+            android:layout_width="@dimen/DIMEN_50dp"
+            android:layout_height="@dimen/DIMEN_50dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/give_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/DIMEN_15dp"
+            android:layout_toRightOf="@+id/img_give"
+            android:text="点赞"
+            android:textColor="#4a4a4a"
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_1dp"
+        android:layout_marginLeft="@dimen/DIMEN_20dp"
+        android:background="#eef1f6" />
+
+    <RelativeLayout
+        android:id="@+id/System_message"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_70dp"
+        android:layout_marginLeft="@dimen/DIMEN_20dp"
+        android:layout_marginRight="@dimen/DIMEN_20dp">
+
+        <ImageView
+            android:id="@+id/dddd"
+            android:layout_width="@dimen/DIMEN_8dp"
+            android:layout_height="@dimen/DIMEN_14dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/arrow_icon" />
+        <TextView
+            android:id="@+id/threedian"
+            android:layout_toLeftOf="@+id/dddd"
+            android:layout_width="@dimen/DIMEN_8dp"
+            android:layout_height="@dimen/DIMEN_8dp"
+            android:background="@drawable/dian"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/DIMEN_10dp"
+            />
+        <ImageView
+            android:id="@+id/img_gives"
+            android:layout_width="@dimen/DIMEN_50dp"
+            android:layout_height="@dimen/DIMEN_50dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/xitong" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/DIMEN_15dp"
+            android:layout_toRightOf="@+id/img_gives"
+            android:text="系统消息"
+            android:textColor="#4a4a4a"
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_1dp"
+        android:layout_marginLeft="@dimen/DIMEN_20dp"
+        android:background="#eef1f6" />
+
+</LinearLayout>

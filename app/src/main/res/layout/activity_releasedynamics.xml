@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    >
+
+
+    <include
+        layout="@layout/layout_titlebar"/>
+    <ScrollView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <EditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:lines="6"
+          android:hint="发布动态"
+            android:textColorHint="#aebace"
+            android:textColor="#4a4a4a"
+            android:textSize="16sp"
+            android:gravity="top"
+            android:paddingLeft="@dimen/DIMEN_20dp"
+            android:paddingTop="@dimen/DIMEN_10dp"
+            android:paddingRight="@dimen/DIMEN_20dp"
+            android:paddingBottom="@dimen/DIMEN_10dp"
+          android:background="#ffffff"
+          android:id="@+id/editText" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mRecyclerView"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/DIMEN_15dp"
+            android:layout_marginLeft="@dimen/DIMEN_10dp"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:id="@+id/upload_trajectory"
+            android:layout_width="@dimen/DIMEN_86dp"
+            android:layout_height="@dimen/DIMEN_31dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/DIMEN_20dp"
+            android:layout_marginTop="@dimen/DIMEN_10dp"
+            android:background="@drawable/bg_releasedynamics">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/DIMEN_10dp"
+                android:src="@mipmap/placeholder_icon"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="上传轨迹"
+                android:textColor="#aebace"
+                android:gravity="center"
+
+                android:textSize="12sp"
+                android:id="@+id/textView" />
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/addlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/DIMEN_10dp"
+            android:layout_marginTop="@dimen/DIMEN_10dp"
+            ></android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_1dp"
+            android:background="#eef1f6"/>
+        <TextView
+            android:id="@+id/btn_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/img_picture"
+            android:hint=""
+            android:textSize="14sp"
+            android:layout_marginLeft="@dimen/DIMEN_15dp"
+            android:textColorHint="#aebace"
+            />
+        <ImageView
+            android:id="@+id/img_picture"
+            android:layout_width="@dimen/DIMEN_26dp"
+            android:layout_height="@dimen/DIMEN_26dp"
+            android:src="@mipmap/picture_icon"
+            android:layout_toLeftOf="@+id/img_noun_expressio"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/DIMEN_10dp"/>
+        <ImageView
+            android:id="@+id/img_noun_expressio"
+            android:layout_width="@dimen/DIMEN_26dp"
+            android:layout_height="@dimen/DIMEN_26dp"
+            android:src="@mipmap/noun_expression_icon"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15sp"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_emotion_layout"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.example.fishingport.app.view.emotionkeyboardview.NoHorizontalScrollerViewPager
+            android:id="@+id/vp_emotionview_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#ffffff"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

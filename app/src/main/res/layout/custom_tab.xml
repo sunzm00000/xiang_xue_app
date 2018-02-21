@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="80dip"
+   android:layout_alignParentBottom="true"
+android:background="@android:color/transparent"
+    android:id="@+id/tab"
+
+     >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="52.0dip"
+        android:layout_gravity="bottom"
+        android:background="#ffffff"
+        android:elevation="35dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <FrameLayout
+            android:id="@+id/frame_home"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:layout_weight="1.0" >
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:button="@null"
+                android:drawableTop="@drawable/home"
+                android:text="首页"
+                android:textSize="10sp"
+                android:textColor="@drawable/home_text"
+                android:gravity="center"
+                android:drawablePadding="5dp"
+                android:id="@+id/radio_home" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frame_forum"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_weight="1.0" >
+
+            <RadioButton
+                android:id="@+id/radio_messages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:button="@null"
+                android:drawableTop="@drawable/message"
+                android:text="消息"
+                android:textColor="@drawable/home_text"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:drawablePadding="5dp"
+                 />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_weight="1.0" >
+
+            <RadioButton
+                android:id="@+id/radio_noun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:button="@null"
+                android:drawableTop="@drawable/noun"
+                android:text="渔友圈"
+                android:textSize="10sp"
+                android:textColor="@drawable/home_text"
+                android:gravity="center"
+                android:drawablePadding="5dp"
+                />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:layout_weight="1.0" >
+
+            <RadioButton
+                android:id="@+id/radio_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:button="@null"
+                android:drawableTop="@drawable/user"
+                android:text="我"
+                android:textColor="@drawable/home_text"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:drawablePadding="5dp"
+                />
+        </FrameLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="1.0"
+        android:elevation="35dp"
+        android:background="@drawable/shape_canvas"
+        >
+
+        <ImageView
+            android:layout_width="60dip"
+            android:layout_height="60dp"
+            android:id="@+id/img_add"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/add" />
+    </FrameLayout>
+
+</RelativeLayout>

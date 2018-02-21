@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#20000000"
+    android:paddingTop="60dp"
+    android:id="@+id/layout">
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="180dp"
+        android:layout_height="110dp"
+        android:layout_marginRight="@dimen/DIMEN_10dp"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:paddingTop="5dp"
+        android:background="@drawable/combined_shape_icon"
+        >
+        <RelativeLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/DIMEN_10dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/DIMEN_20dp">
+
+            <TextView
+                android:id="@+id/txt_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分享到"
+                android:drawableLeft="@mipmap/shape_ble_fishingcircle_icon"
+                android:drawablePadding="@dimen/DIMEN_5dp"
+                android:gravity="center"
+                android:textColor="#73809e"
+                android:textSize="15sp"
+                android:layout_marginLeft="@dimen/DIMEN_16dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                />
+            <ImageView
+                android:id="@+id/fishingcirle_weixin"
+                android:layout_width="@dimen/DIMEN_26dp"
+                android:layout_toRightOf="@+id/txt_message"
+                android:layout_toLeftOf="@+id/fishingcirle_weixin_pengyouquan"
+                android:layout_height="@dimen/DIMEN_26dp"
+                android:layout_marginRight="@dimen/DIMEN_5dp"
+                android:src="@mipmap/fishingcirle_weixin"/>
+            <ImageView
+                android:id="@+id/fishingcirle_weixin_pengyouquan"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/DIMEN_3dp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="@dimen/DIMEN_26dp"
+                android:src="@mipmap/fishingcirle_weixin_pengyouquan"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eef1f6"
+            android:layout_centerVertical="true"
+            android:layout_below="@id/top"
+            android:layout_marginTop="@dimen/DIMEN_15dp"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/DIMEN_10dp"
+            android:layout_below="@+id/top"
+            android:layout_marginTop="@dimen/DIMEN_30dp">
+            <TextView
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="删除"
+                android:layout_marginLeft="@dimen/DIMEN_16dp"
+                android:drawableLeft="@mipmap/delete"
+                android:drawablePadding="@dimen/DIMEN_5dp"
+                android:gravity="center"
+                android:textColor="#73809e"
+                android:textSize="15sp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7faff"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="@dimen/DIMEN_161dp"
+            android:layout_height="@dimen/DIMEN_146dp"
+            android:src="@mipmap/noport"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/DIMEN_90dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#aebace"
+            android:lineSpacingExtra="2sp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="67dp"
+            android:text="暂时没有轨迹记录!"
+            />
+
+        <TextView
+            android:id="@+id/send_port"
+            android:layout_width="@dimen/DIMEN_86dp"
+            android:layout_height="@dimen/DIMEN_31dp"
+            android:textSize="14sp"
+            android:textColor="#73809e"
+            android:letterSpacing="0.08"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/DIMEN_30dp"
+            android:background="@drawable/bg_nonet"
+            android:text="发一条轨迹"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

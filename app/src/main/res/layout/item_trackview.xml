@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/track_item"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:background="#ffffff"
+    android:layout_margin="@dimen/DIMEN_10dp"
+    >
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/DIMEN_12dp"
+        android:scaleType="centerCrop"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/img"
+        android:layout_marginLeft="@dimen/DIMEN_10dp"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="时间"
+                />
+            <TextView
+                android:id="@+id/didian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="地点"
+                android:layout_marginLeft="10dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/qidian"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="起点"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="→"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                />
+            <TextView
+                android:id="@+id/zhongdian"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="终点"
+                android:layout_marginLeft="10dp"
+                />
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/gltotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/gltotal"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                />
+
+            <TextView
+                android:layout_toRightOf="@+id/gltotal"
+                android:id="@+id/total_long"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/DIMEN_5dp"
+                android:text="公里"
+                />
+            <ImageView
+                android:id="@+id/totaltime"
+                android:layout_toRightOf="@+id/total_long"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/totaltime"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/DIMEN_10dp"
+                />
+            <TextView
+                android:id="@+id/saling"
+                android:layout_toRightOf="@+id/totaltime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="航行时间"
+                android:layout_marginLeft="10dp"
+                />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    
+
+
+</RelativeLayout>

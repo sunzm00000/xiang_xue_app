@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_73dp"
+        android:background="#ffffff"
+        >
+      <RelativeLayout
+          android:id="@+id/top"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/DIMEN_10dp"
+          >
+
+          <TextView
+              android:id="@+id/title"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerVertical="true"
+              android:text="= asd "
+              android:textColor="#132234"
+              android:textSize="15sp"
+              android:layout_marginLeft="@dimen/DIMEN_20dp"
+              />
+
+          <TextView
+              android:id="@+id/time"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="asdasd"
+              android:textSize="14sp"
+              android:textColor="#aebace"
+              android:layout_alignParentRight="true"
+
+              android:layout_marginRight="@dimen/DIMEN_20dp"
+              />
+
+      </RelativeLayout>
+        <TextView
+            android:id="@+id/content"
+            android:layout_below="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="asdfsad"
+            android:textColor="#aebace"
+            android:textSize="14sp"
+            android:layout_marginLeft="@dimen/DIMEN_20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="@dimen/DIMEN_20dp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_1dp"
+            android:background="#eef1f6"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/DIMEN_20dp"
+            ></View>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

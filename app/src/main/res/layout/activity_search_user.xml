@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true">
+    <include
+        layout="@layout/layout_titlebar"/>
+    <com.example.fishingport.app.view.IconCenterEditText
+        android:id="@+id/icet_search"
+        android:layout_margin="@dimen/DIMEN_10dp"
+        style="@style/liuEditText"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_1dp"
+        android:background="#f1f4fb"/>
+    <TextView
+        android:id="@+id/noview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#7a8fac"
+        android:gravity="center_horizontal"
+        android:text="对不起，没有找到搜索结果！"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

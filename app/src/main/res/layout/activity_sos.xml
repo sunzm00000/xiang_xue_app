@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient_color">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <include
+        layout="@layout/layout_titlebar"/>
+
+    <com.skyfishjy.library.RippleBackground
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="@dimen/DIMEN_317dp"
+        android:layout_height="@dimen/DIMEN_317dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/content"
+        app:rb_color="#c0dfff"
+        app:rb_radius="32dp"
+        app:rb_rippleAmount="5"
+        app:rb_duration="3000"
+        app:rb_scale="5">
+        <ImageView
+            android:layout_width="@dimen/DIMEN_34dp"
+            android:layout_height="@dimen/DIMEN_80dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/centerImage"
+            android:src="@mipmap/shape_sos_icon"/>
+    </com.skyfishjy.library.RippleBackground>
+
+    <TextView
+        android:id="@+id/locationgps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:text="当前定位：14.122°E,47.145°N"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_46dp"
+        android:layout_marginBottom="@dimen/DIMEN_10dp"
+        android:background="@drawable/shape_sos"
+        android:layout_marginLeft="@dimen/DIMEN_40dp"
+        android:layout_marginRight="@dimen/DIMEN_40dp"
+        android:layout_above="@+id/layout_message">
+
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/DIMEN_20dp"
+                android:layout_height="@dimen/DIMEN_19dp"
+                android:src="@mipmap/sos_phone_icon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="拨打救援电话"
+                android:textColor="#22a6ef"
+                android:textSize="16sp"
+                android:layout_marginLeft="@dimen/DIMEN_10dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+   <RelativeLayout
+       android:id="@+id/layout_message"
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/DIMEN_46dp"
+       android:layout_alignParentBottom="true"
+       android:background="@drawable/shape_sos"
+       android:layout_marginLeft="@dimen/DIMEN_40dp"
+       android:layout_marginRight="@dimen/DIMEN_40dp"
+       android:layout_marginBottom="@dimen/DIMEN_21dp">
+
+       <LinearLayout
+           android:layout_centerInParent="true"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+
+           <ImageView
+               android:layout_width="@dimen/DIMEN_20dp"
+               android:layout_height="@dimen/DIMEN_19dp"
+               android:src="@mipmap/sos_message_icon"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="发送求救信号"
+               android:textColor="#22a6ef"
+               android:textSize="16sp"
+               android:layout_marginLeft="@dimen/DIMEN_10dp"/>
+       </LinearLayout>
+       </RelativeLayout>
+   
+
+</RelativeLayout>

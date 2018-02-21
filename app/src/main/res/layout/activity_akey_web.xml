@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    >
+    <include layout="@layout/layout_titlebar"
+        android:visibility="gone"
+        ></include>
+     <FrameLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:background="#ffffff"
+         ></FrameLayout>
+    <com.example.fishingport.app.widget.CustomVideoView
+        android:id="@+id/videoview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/DIMEN_100dp"
+        />
+    <TextView
+        android:id="@+id/skip"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_above="@+id/akeybtn"
+        android:text="跳过"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/DIMEN_29dp"
+        />
+     <TextView
+         android:id="@+id/akeybtn"
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/DIMEN_46dp"
+         android:layout_alignParentBottom="true"
+         android:text="一键上网"
+         android:textSize="16sp"
+         android:textColor="#ffffff"
+        android:layout_marginLeft="@dimen/DIMEN_40dp"
+         android:layout_marginRight="@dimen/DIMEN_40dp"
+         android:gravity="center"
+         android:textStyle="bold"
+         android:background="@drawable/bg_button"
+         android:layout_marginBottom="@dimen/DIMEN_46dp"
+         />
+
+</RelativeLayout>

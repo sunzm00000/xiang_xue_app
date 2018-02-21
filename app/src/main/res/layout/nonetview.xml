@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7faff"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/DIMEN_161dp"
+            android:layout_height="@dimen/DIMEN_146dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/DIMEN_90dp"
+            android:src="@mipmap/nonet" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="67dp"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="2sp"
+            android:text="网络已走丢，努力寻找中..."
+            android:textColor="#aebace"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/nonet_refresh"
+            android:layout_width="@dimen/DIMEN_86dp"
+            android:layout_height="@dimen/DIMEN_31dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/DIMEN_30dp"
+            android:background="@drawable/bg_nonet"
+            android:gravity="center"
+            android:letterSpacing="0.08"
+            android:text="刷新"
+            android:textColor="#73809e"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

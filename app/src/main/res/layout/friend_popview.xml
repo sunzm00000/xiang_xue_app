@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#20000000"
+    android:paddingTop="55dp"
+    android:id="@+id/layout"
+    >
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="@dimen/DIMEN_5dp"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:paddingTop="0dp"
+        android:background="@drawable/combined_shape_icon"
+        >
+        <RelativeLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/DIMEN_10dp"
+            android:layout_marginTop="@dimen/DIMEN_30dp">
+
+            <TextView
+                android:id="@+id/txt_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="添加备注"
+                android:drawableLeft="@mipmap/beizhu"
+                android:drawablePadding="@dimen/DIMEN_10dp"
+                android:gravity="center"
+                android:textColor="#73809e"
+                android:textSize="15sp"
+                android:layout_marginLeft="@dimen/DIMEN_16dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eef1f6"
+            android:layout_below="@+id/top"
+            android:layout_marginTop="5dp"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/DIMEN_10dp"
+            android:layout_below="@+id/top"
+            android:layout_marginTop="@dimen/DIMEN_15dp">
+            <TextView
+                android:id="@+id/txt_add_member"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="删除好友"
+                android:drawableLeft="@mipmap/delete"
+                android:drawablePadding="@dimen/DIMEN_10dp"
+                android:gravity="center"
+                android:textColor="#73809e"
+                android:textSize="15sp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

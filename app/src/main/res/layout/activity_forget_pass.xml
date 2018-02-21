@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eef1f6"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    >
+
+    <include
+        layout="@layout/layout_titlebar"/>
+
+    <LinearLayout
+        android:layout_marginRight="@dimen/DIMEN_40dp"
+        android:layout_marginLeft="@dimen/DIMEN_40dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_46dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/DIMEN_40dp"
+        android:background="@drawable/bg_forget_passedit">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/yinprofile"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/DIMEN_25dp"/>
+
+        <com.example.fishingport.app.view.IconCenterEditText
+            android:id="@+id/edit_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/DIMEN_15dp"
+            android:background="@null"
+            android:hint="手机号"
+            android:textCursorDrawable="@drawable/guangbiao"
+            android:textColorHint="#aebace"
+            android:layout_gravity="center_vertical"
+            android:textColor="#aebace"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginRight="@dimen/DIMEN_40dp"
+        android:layout_marginLeft="@dimen/DIMEN_40dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_46dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/DIMEN_15dp"
+        >
+        <LinearLayout
+            android:layout_width="@dimen/DIMEN_177dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_forget_passedit"
+            android:layout_gravity="center_vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/yincode"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/DIMEN_25dp"/>
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/DIMEN_15dp"
+                android:background="@null"
+                android:hint="验证码"
+                android:textColorHint="#aebace"
+                android:textCursorDrawable="@drawable/guangbiao"
+                android:layout_gravity="center_vertical"
+                android:textColor="#aebace"
+                android:textSize="16sp"
+                android:id="@+id/editText2" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_code"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#3976c2"
+            android:textSize="16sp"
+            android:text="获取验证码"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_marginLeft="@dimen/DIMEN_40dp"
+        android:layout_marginRight="@dimen/DIMEN_40dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_46dp"
+        android:background="@drawable/bg_button"
+        android:layout_marginTop="@dimen/DIMEN_15dp"
+        android:text="下一步"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        />
+
+</LinearLayout>

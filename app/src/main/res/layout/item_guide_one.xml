@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/guide_image"
+        android:layout_width="268dp"
+        android:layout_height="306dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/one"
+        android:layout_marginTop="@dimen/DIMEN_60dp"
+        />
+    <TextView
+        android:id="@+id/txt_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/guide_image"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:letterSpacing="0.02"
+        android:text="一键上网"
+        android:layout_marginTop="@dimen/DIMEN_40dp"
+        android:textColor="#73809e"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/txt_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:letterSpacing="0.02"
+        android:text="免费、安全、高速网络，省钱、更省心"
+        android:textColor="#aebace"
+        android:textSize="14sp"
+        android:layout_below="@+id/txt_top"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_40dp"
+        android:layout_below="@+id/txt_down"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="@dimen/DIMEN_20dp"
+        android:background="@null"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        />
+
+</RelativeLayout>

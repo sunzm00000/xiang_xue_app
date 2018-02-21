@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7faff"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true">
+
+    <include
+        layout="@layout/layout_titlebar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/DIMEN_20dp"
+        android:textColor="#73809e"
+        android:text="你需要发送验证申请，等待对方通过"
+        android:textSize="14sp"/>
+
+
+    <EditText
+        android:id="@+id/edit_friends_verify"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_200dp"
+        android:background="#ffffff"
+        android:textSize="14sp"
+        android:textColor="#132234"
+
+        android:paddingLeft="@dimen/DIMEN_20dp"
+        android:gravity="top"
+        android:paddingTop="@dimen/DIMEN_15dp"/>
+
+
+</LinearLayout>

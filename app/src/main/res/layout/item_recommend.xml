@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/DIMEN_106dp"
+    android:background="#ffffff"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_75dp"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/img_right_recommend"
+            android:layout_width="@dimen/DIMEN_109dp"
+            android:layout_height="@dimen/DIMEN_75dp"
+            android:scaleType="fitXY"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/DIMEN_20dp"
+            android:src="@mipmap/timg"/>
+
+        <TextView
+            android:id="@+id/txt_title_recommend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#132234"
+            android:textSize="15dp"
+             android:maxLines="3"
+            android:ellipsize="end"
+            android:layout_marginLeft="@dimen/DIMEN_20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/img_right_recommend"
+            android:layout_marginRight="@dimen/DIMEN_10dp"
+            android:text="青岛即墨市海洋与渔业局加强公共职能服务建设"/>
+        <TextView
+            android:id="@+id/txt_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#aebace"
+            android:layout_alignParentBottom="true"
+            android:textSize="12dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:maxEms="9"
+            android:layout_marginLeft="@dimen/DIMEN_20dp"
+            android:text="渔业政务网"/>
+        <TextView
+            android:id="@+id/txt_collection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/shape_collection_icon"
+            android:layout_toLeftOf="@+id/img_right_recommend"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/DIMEN_10dp"
+            android:text="748"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:drawablePadding="@dimen/DIMEN_5dp"
+            android:textColor="#aebace"/>
+        <TextView
+            android:id="@+id/txt_comment_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/comment_home_icon"
+            android:layout_toLeftOf="@+id/txt_collection"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/DIMEN_15dp"
+            android:text="7"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:drawablePadding="@dimen/DIMEN_5dp"
+            android:textColor="#aebace"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_1dp"
+        android:background="#eef1f6"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/DIMEN_20dp"/>
+
+</RelativeLayout>

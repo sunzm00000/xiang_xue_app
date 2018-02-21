@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemone"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/DIMEN_200dp"
+    >
+    <ImageView
+        android:id="@+id/img_icon"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_240dp"
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_240dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/bg_zhe"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_150dp"
+        android:paddingBottom="@dimen/DIMEN_20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txt_collection"
+            android:text=""
+            android:textSize="22sp"
+            android:layout_marginLeft="@dimen/DIMEN_20dp"
+            android:layout_marginBottom="@dimen/DIMEN_20dp"
+            android:textColor="#f7faff"/>
+
+        <TextView
+            android:id="@+id/txt_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/DIMEN_10dp"
+            android:text=""
+            android:textSize="12sp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:maxEms="6"
+            android:layout_marginLeft="@dimen/DIMEN_20dp"
+            android:textColor="#f7faff"/>
+
+        <TextView
+            android:id="@+id/txt_come"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/txt_info"
+            android:text=""
+            android:textColor="#ffffff"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:maxEms="6"
+            android:textSize="12sp"
+            />
+
+
+        <TextView
+            android:id="@+id/txt_collection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/zan_ping"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/DIMEN_20dp"
+            android:text=""
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:drawablePadding="@dimen/DIMEN_5dp"
+            android:textColor="#f7faff"/>
+        <TextView
+            android:id="@+id/txt_comment_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/write_ping"
+            android:layout_toLeftOf="@+id/txt_collection"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/DIMEN_15dp"
+            android:text=""
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:drawablePadding="@dimen/DIMEN_5dp"
+            android:textColor="#f7faff"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">渔网通</string>
+    <string name="app_name1">渔网通</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_near_port">NearPortActivity</string>
+    <string name="title_activity_tarck">TarckActivity</string>
+    <string name="title_activity_port_map">PortMapActivity</string>
+</resources>

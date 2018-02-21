@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fishingport.app.ui.fragment.CeshiBaidumap">
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+
+       />
+    <Button
+        android:id="@+id/tiaozhuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:text="记录"
+        />
+
+    <Button
+        android:layout_toRightOf="@+id/tiaozhuan"
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳转=="
+        />
+    <!--下方三个控制按钮，地位，开始记录，缩放-->
+    <RelativeLayout
+        android:id="@+id/ji"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:background="#00000000"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        >
+        <!--定位开始-->
+        <LinearLayout
+            android:id="@+id/location"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/bg_locationpage"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="@dimen/DIMEN_16dp"
+                android:layout_height="@dimen/DIMEN_16dp"
+                android:src="@mipmap/locationpage" />
+        </LinearLayout>
+        <!--定位结束-->
+
+        <!--开始记录开始-->
+        <LinearLayout
+            android:id="@+id/record"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_locationpage"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_locationpage"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/text_record"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开始记录"
+                    android:gravity="center"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+        <!--开始记录结束-->
+        <!--缩放开始-->
+        <LinearLayout
+            android:layout_width="35dp"
+            android:layout_height="67dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical"
+            android:background="@drawable/bg_cotraller">
+            <LinearLayout
+                android:id="@+id/jia"
+                android:layout_width="37dp"
+                android:layout_height="32dp"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/jia"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+            <View
+                android:layout_width="24dp"
+                android:layout_height="1dp"
+                android:background="#cccccc"
+                android:layout_gravity="center"
+                ></View>
+            <LinearLayout
+                android:id="@+id/jian"
+                android:layout_width="37dp"
+                android:layout_height="34dp"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/jian"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <!--缩放结束-->
+    </RelativeLayout>
+</RelativeLayout>
